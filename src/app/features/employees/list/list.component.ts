@@ -17,7 +17,8 @@ export class ListComponent {
     'name',
     'email',
     'department',
-    'salary'
+    'salary',
+    'actions'
   ];
 employees: Employee[] = [];
  constructor(
@@ -26,4 +27,11 @@ employees: Employee[] = [];
     this.employees =
       this.employeeService.getEmployees();
   }
+  editEmployee(employee: any) {
+  console.log('Edit', employee);
+}
+
+deleteEmployee(id: number) {
+  console.log('Delete', id);
+}
 }
