@@ -4,10 +4,10 @@ import { LoginComponent } from "./features/auth/login/login.component";
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent],
+  imports: [LoginComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-enterprise-dashboard';
+  // title = 'angular-enterprise-dashboard';
 }
