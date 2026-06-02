@@ -28,4 +28,21 @@ export class EmployeeService {
     emp => emp.id !== id
   );
 }
+addEmployee(employee: Employee) {
+  employee.id = this.employees.length + 1;
+  this.employees.push(employee);
+}
+getEmployeeById(id: number) {
+  return this.employees.find(emp => emp.id === id);
+}
+
+updateEmployee(updatedEmployee: Employee) {
+  const index = this.employees.findIndex(
+    emp => emp.id === updatedEmployee.id
+  );
+
+  if (index !== -1) {
+    this.employees[index] = updatedEmployee;
+  }
+}
 }

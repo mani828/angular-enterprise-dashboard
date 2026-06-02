@@ -1,1 +1,34 @@
-<p>edit works!</p>
+<h2>Edit Employee</h2>
+
+<form [formGroup]="employeeForm"
+      (ngSubmit)="onSubmit()">
+
+  <label>Name</label>
+  <input type="text"
+         formControlName="name">
+
+  <br><br>
+
+  <label>Email</label>
+  <input type="email"
+         formControlName="email">
+
+  <br><br>
+
+  <label>Department</label>
+  <input type="text"
+         formControlName="department">
+
+  <br><br>
+
+  <label>Salary</label>
+  <input type="number"
+         formControlName="salary">
+
+  <br><br>
+
+  <button type="submit">
+    Update Employee
+  </button>
+
+</form>

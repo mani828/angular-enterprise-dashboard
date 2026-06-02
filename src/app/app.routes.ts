@@ -3,6 +3,8 @@ import { LoginComponent } from './features/auth/login/login.component';
 import { HomeComponent } from './features/dashboard/home/home.component';
 import { authGuard } from './core/guards/auth.guard';
 import { ListComponent } from './features/employees/list/list.component';
+import { AddComponent } from './features/employees/add/add.component';
+import { EditComponent } from './features/employees/edit/edit.component';
 
 export const routes: Routes = [
     {
@@ -23,14 +25,18 @@ export const routes: Routes = [
     path: '***',
     redirectTo: 'login'
 },
-// {
-//   path: 'employees',
-//   loadChildren: () => import('./features/employees/employees.module')
-//   .then(m => m.EmployeesModule)
-// }
     {
         path: 'employees',
         component: ListComponent,
         canActivate: [authGuard]
-    }
+    },
+    {
+  path: 'employees/add',
+  component: AddComponent,
+  canActivate: [authGuard]
+},
+{
+  path: 'employees/edit/:id',
+  component: EditComponent
+}
 ];
