@@ -4,13 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthService {
-  // login(email: string, password: string){
-  //   if(email === 'admin@test.com' && password === 'admin123'){
-  //     localStorage.setItem('token','dummy-jwt-token');
-  //     return true;
-  //   }
-  //   return false;
-  // }
+  login(email: string, password: string){
+    if(email === 'admin@test.com' && password === 'admin123'){
+      localStorage.setItem('token','dummy-jwt-token');
+      return true;
+    }
+    return false;
+  }
   getToken() {
   return localStorage.getItem('token');
 }

@@ -23,9 +23,14 @@ export const routes: Routes = [
     path: '***',
     redirectTo: 'login'
 },
-{
-  path: 'employees',
-  component: ListComponent,
-  canActivate: [authGuard]
-}
+// {
+//   path: 'employees',
+//   loadChildren: () => import('./features/employees/employees.module')
+//   .then(m => m.EmployeesModule)
+// }
+    {
+        path: 'employees',
+        component: ListComponent,
+        canActivate: [authGuard]
+    }
 ];

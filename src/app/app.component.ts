@@ -4,7 +4,7 @@ import { LoginComponent } from "./features/auth/login/login.component";
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, RouterOutlet],
+  imports: [ RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
