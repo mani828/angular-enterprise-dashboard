@@ -31,7 +31,14 @@ employees: Employee[] = [];
   console.log('Edit', employee);
 }
 
-deleteEmployee(id: number) {
-  console.log('Delete', id);
+ deleteEmployee(id: number) {
+  const confirmed = confirm(
+    'Are you sure you want to delete this employee?'
+  );
+  if(confirmed){
+    this.employeeService.deleteEmployee(id);
+    this.employees = this.employeeService.getEmployees();
+  }
+
 }
 }

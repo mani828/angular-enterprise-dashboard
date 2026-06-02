@@ -5,7 +5,6 @@ import { Employee } from './employees.model';
   providedIn: 'root'
 })
 export class EmployeeService {
-
   constructor() { }
   employees: Employee[] = [{
     id:1,
@@ -24,4 +23,9 @@ export class EmployeeService {
      getEmployees() {
     return this.employees;
   }
+  deleteEmployee(id: number) {
+  this.employees = this.employees.filter(
+    emp => emp.id !== id
+  );
+}
 }
