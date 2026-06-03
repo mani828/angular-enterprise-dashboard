@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { EmployeeService } from '../employee.service';
 import { Employee } from '../employees.model';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-list',
   standalone: true,
   imports: [CommonModule,
-    MatTableModule],
+    MatTableModule,MatButtonModule ,],
   templateUrl: './list.component.html',
   styleUrl: './list.component.scss'
 })
@@ -24,12 +25,15 @@ export class ListComponent {
     'actions'
   ];
 employees: Employee[] = [];
+dataSource = new MatTableDataSource<Employee>();
  constructor(
     private employeeService: EmployeeService,
   private router: Router
   ) {
     this.employees =
       this.employeeService.getEmployees();
+      this.dataSource.data =
+  this.employees;
   }
   editEmployee(employee: any) {
      this.router.navigate([
@@ -49,5 +53,12 @@ employees: Employee[] = [];
 }
 goToAddEmployee() {
   this.router.navigate(['/employees/add']);
+}
+applyFilter(event: Event) {
+  const filterValue =
+    (event.target as HTMLInputElement)
+      .value;
+     this.dataSource.filter =
+    filterValue.trim().toLowerCase();
 }
 }

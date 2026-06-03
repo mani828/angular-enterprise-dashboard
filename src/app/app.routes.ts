@@ -5,6 +5,7 @@ import { authGuard } from './core/guards/auth.guard';
 import { ListComponent } from './features/employees/list/list.component';
 import { AddComponent } from './features/employees/add/add.component';
 import { EditComponent } from './features/employees/edit/edit.component';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
 
 export const routes: Routes = [
     {
@@ -18,7 +19,7 @@ export const routes: Routes = [
 },
 {
     path: 'dashboard',
-    component: HomeComponent,
+    component: DashboardComponent,
     canActivate: [authGuard]
 },
 {

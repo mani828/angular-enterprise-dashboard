@@ -12,7 +12,12 @@
   <label>Email</label>
   <input type="email"
          formControlName="email">
-
+<div *ngIf="
+employeeForm.get('email')?.invalid &&
+employeeForm.get('email')?.touched
+">
+  Valid email is required
+</div>
   <br><br>
 
   <label>Department</label>

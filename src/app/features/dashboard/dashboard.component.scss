@@ -1,0 +1,11 @@
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+mat-card {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+}
