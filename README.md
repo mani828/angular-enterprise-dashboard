@@ -1,59 +1,104 @@
-# AngularEnterpriseDashboard
+# Enterprise Angular Dashboard Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+An enterprise-grade Angular dashboard application built using Angular, TypeScript, and Angular Material. The application demonstrates modern frontend development practices including JWT Authentication, Route Guards, Lazy Loading, and CRUD Operations.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+* JWT Authentication & Authorization
+* Route Guards for Protected Routes
+* Lazy Loaded Modules
+* Complete CRUD Operations
+* Responsive Dashboard UI
+* Angular Material Components
+* Reusable Components & Services
+* REST API Integration
+* Modular Project Structure
+* Form Validation
+* Error Handling
 
-```bash
+## 🛠️ Tech Stack
+
+* Angular
+* TypeScript
+* Angular Material
+* RxJS
+* HTML5
+* CSS3
+* REST APIs
+
+## 📷 Screenshots
+
+### Login Page
+
+(Add Screenshot Here)
+
+### Dashboard
+
+(Add Screenshot Here)
+
+### User Management
+
+(Add Screenshot Here)
+
+### CRUD Operations
+
+(Add Screenshot Here)
+
+## 📂 Project Structure
+
+src/
+├── app/
+│ ├── core/
+│ ├── shared/
+│ ├── features/
+│ ├── services/
+│ ├── guards/
+│ └── components/
+├── assets/
+└── environments/
+
+## ⚙️ Installation
+
+1. Clone the repository
+
+git clone https://github.com/mani828/angular-enterprise-dashboard.git
+
+2. Navigate to project folder
+
+cd angular-enterprise-dashboard
+
+3. Install dependencies
+
+npm install
+
+4. Run the application
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+5. Open browser
 
-## Code scaffolding
+http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔐 Authentication Flow
 
-```bash
-ng generate component component-name
-```
+* User logs in with credentials
+* JWT token is generated
+* Token stored securely
+* Route Guards validate authentication
+* Unauthorized users are redirected to Login
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📈 Future Enhancements
 
-```bash
-ng generate --help
-```
+* Role Based Access Control (RBAC)
+* Dashboard Analytics
+* Unit Testing
+* Dark Theme Support
+* State Management using NgRx
 
-## Building
+## 👨‍💻 Author
 
-To build the project run:
+Manikanta Akula
 
-```bash
-ng build
-```
+Frontend Developer | Angular Developer
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+GitHub: https://github.com/mani828
