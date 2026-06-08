@@ -30,19 +30,25 @@ An enterprise-grade Angular dashboard application built using Angular, TypeScrip
 
 ### Login Page
 
-(Add Screenshot Here)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4279acad-6d4b-40d0-ad49-7e7acf941299" />
+
 
 ### Dashboard
 
-(Add Screenshot Here)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b889d2d8-ec07-4944-ac8d-f3f79f0bef46" />
+
 
 ### User Management
 
-(Add Screenshot Here)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6099ccc8-6db6-43de-88bb-81659c34a439" />
+
 
 ### CRUD Operations
 
-(Add Screenshot Here)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/322ac8ec-ccfe-499d-bacf-cb8a19ce563e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/14a5530d-8561-44db-a90d-f7d8b585e1a9" />
+
+
 
 ## 📂 Project Structure
 
