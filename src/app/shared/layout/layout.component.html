@@ -1,20 +1,26 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button>
+<mat-toolbar color="primary" style="background-color: rgb(208, 246, 246);">
+  <button mat-icon-button (click)="toggleMenu()"  class="menu-btn" type="button" aria-label="Open menu">
     <mat-icon>menu</mat-icon>
   </button>
 
-  <span>Employee Management System</span>
+    <div class="brand">
+      
+      <span>Employee Management System</span>
+    </div>
 
   <span class="spacer"></span>
-
-  <button mat-button>
+  <button mat-button (click)="logout()" class="logout-btn" type="button">
     <mat-icon>logout</mat-icon>
-    Logout</button>
+    Logout </button>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<mat-sidenav-container style="background: linear-gradient(
+    135deg,
+    #f5f7fa 0%,
+    #e4e8f0 100%
+  );">
 
-  <mat-sidenav mode="side" opened>
+  <mat-sidenav [opened]="isMenuOpen" mode="side" opened  style="background-color: blanchedalmond;">
 
     <button
       mat-button

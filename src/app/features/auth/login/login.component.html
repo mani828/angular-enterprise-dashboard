@@ -1,6 +1,8 @@
-<mat-card class="login-card">
+<mat-card  class="login-card" >
 
-  <h2>Enterprise Dashboard Login</h2>
+  <div style="text-align: center;"> <h2>Enterprise Dashboard Login</h2>
+  <h3>Welcome back</h3>
+  <h4>Login to continue</h4></div>
 
   <form [formGroup]="loginForm"
         (ngSubmit)="onSubmit()">
@@ -52,13 +54,12 @@
 
     <button
       mat-raised-button
-      type="submit"
-      [disabled]="loginForm.invalid">
+       class="login-btn" type="submit" [disabled]="loginForm.invalid">
 
       Login
 
     </button>
-
+    <a style="text-align: center;"> Forgot password? </a>
   </form>
 
 </mat-card>

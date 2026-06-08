@@ -1,17 +1,30 @@
-<h1>Enterprise Dashboard</h1>
+<section class="dashboard-page">
+  <div class="dashboard-header">
+    <p class="eyebrow">Overview</p>
+    <h1>Enterprise Dashboard</h1>
+  </div>
 
-<div class="cards">
-  <mat-card>
-    <mat-card-title>Total Employees</mat-card-title>
-    <mat-card-content>
-      {{ employeeCount }}
-    </mat-card-content>
-  </mat-card>
+  <div class="cards">
+    <mat-card class="stat-card">
+      <div class="stat-icon employees-icon">👥</div>
 
-  <mat-card>
-    <mat-card-title>Departments</mat-card-title>
-    <mat-card-content>
-      {{ departmentCount }}
-    </mat-card-content>
-  </mat-card>
-</div>
+      <div class="stat-content">
+        <mat-card-title>Total Employees</mat-card-title>
+        <mat-card-content>
+          {{ employeeCount }}
+        </mat-card-content>
+      </div>
+    </mat-card>
+
+    <mat-card class="stat-card">
+      <div class="stat-icon departments-icon">🏢</div>
+
+      <div class="stat-content">
+        <mat-card-title>Departments</mat-card-title>
+        <mat-card-content>
+          {{ departmentCount }}
+        </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+</section>
